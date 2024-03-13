@@ -1,6 +1,6 @@
 import MainImage from "../main-image/Main-Image";
 import Gallery from "../gallery/Gallery";
-import Bookings from "../bookings/bookings";
+import Bookings from "../bookings/Bookings";
 
 
 function Body() {
