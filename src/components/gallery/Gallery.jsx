@@ -1,8 +1,8 @@
 function Gallery () {
     return (
-        <div>
+        <div className="gallery-section">
             Gallery
-            <button> Check now</button>
+            <button className="button"> Check now</button>
         </div>
     )
 }

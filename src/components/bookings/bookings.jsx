@@ -1,7 +1,7 @@
 function Bookings () {
     return (
-        <div>
-            Check availability<button> Book now</button>
+        <div className="booking-section">
+            Check availability<button className="button"> Book now</button>
         </div>
     )
 }
