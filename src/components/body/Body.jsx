@@ -5,7 +5,7 @@ import Bookings from "../bookings/bookings";
 
 function Body() {
     return (
-        <body>
+        <div>
             <section className="main-image">
                 <MainImage />
             </section>
@@ -17,7 +17,7 @@ function Body() {
                     <Bookings />
                 </section>
             </section>
-        </body>
+        </div>
     )
 }
 
