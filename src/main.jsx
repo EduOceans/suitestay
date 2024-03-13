@@ -5,9 +5,9 @@ import App from './App.jsx'
 
 import { PrimeReactProvider } from "primereact/api";
 
-import "primereact/resources/themes/saga-purple/theme.css";
+import "primereact/resources/themes/arya-orange/theme.css"; //theme
 import "primereact/resources/primereact.min.css"; //core css
-
+import "primeflex/primeflex.css";
 import 'primeicons/primeicons.css';
         
 ReactDOM.createRoot(document.getElementById('root')).render(

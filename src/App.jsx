@@ -2,22 +2,71 @@ import { useState } from 'react'
 
 import { Button } from 'primereact/button';
 
-// import { PrimeReactProvider } from "primereact/api";
 
+import { Menubar } from 'primereact/menubar';
+        
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import "primereact/resources/themes/arya-orange/theme.css"; //theme
+
 
 
 
 function App() {
   const [count, setCount] = useState(0)
+  const items = [
+    {
+        label: 'Home',
+        icon: 'pi pi-home'
+    },
+    {
+        label: 'Features',
+        icon: 'pi pi-star'
+    },
+    {
+        label: 'Projects',
+        icon: 'pi pi-search',
+        items: [
+            {
+                label: 'Components',
+                icon: 'pi pi-bolt'
+            },
+            {
+                label: 'Blocks',
+                icon: 'pi pi-server'
+            },
+            {
+                label: 'UI Kit',
+                icon: 'pi pi-pencil'
+            },
+            {
+                label: 'Templates',
+                icon: 'pi pi-palette',
+                items: [
+                    {
+                        label: 'Apollo',
+                        icon: 'pi pi-palette'
+                    },
+                    {
+                        label: 'Ultima',
+                        icon: 'pi pi-palette'
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        label: 'Contact',
+        icon: 'pi pi-envelope'
+    }
+];
 
   return (
     <>
       <div>
+      <Menubar model={items} />
       <Button label="Check" icon="pi pi-check" />
+    
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
