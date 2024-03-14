@@ -1,12 +1,7 @@
 import { useState } from 'react'
-<<<<<<< HEAD
-=======
 
 import { Button } from 'primereact/button';
-
-
 import { Menubar } from 'primereact/menubar';
->>>>>>> 92b4fcb (Component_V1)
         
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
