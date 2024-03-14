@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 // import './index.css'
 
-// import { StyleClass } from 'primereact/styleclass';
 import { PrimeReactProvider } from 'primereact/api'
 
 import 'primereact/resources/themes/arya-orange/theme.css' //theme
