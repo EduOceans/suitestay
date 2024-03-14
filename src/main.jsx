@@ -11,7 +11,6 @@ import 'primereact/resources/primereact.min.css' //core css
 import 'primeflex/primeflex.css'
 import 'primeicons/primeicons.css'
 
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <PrimeReactProvider value={{ ripple: true, StyleClass: true }}>

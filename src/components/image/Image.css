@@ -1,0 +1,19 @@
+.img {
+    max-width: 400px;
+}
+
+.anouncement-container {
+    margin-top:  100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.anouncement-title {
+    font-size: 250%;
+    font-weight: 300;
+    font-family: Roboto;
+}
+
+.anouncement-txt {
+    margin: 30px;
+}
