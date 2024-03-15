@@ -25,22 +25,22 @@ function Header() {
             <i className="pi pi-bars text-4xl"></i>
           </a>
             {/* LOGO */}
-            <div className="header-logo">
+            {/* <div className="header-logo">
                 <div className="logo">SUITESTAY</div>
                 <div className="lines-container">
                 <div className="line-left"></div>
                 <div className="hotel-sign">H O T E L</div>
                 <div className="line-right"></div>
                 </div>
-            </div>
+            </div> */}
             {/* MENU */}
-            <div className="menu">
+            <div className="menu mt-4">
                 <ul className="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row">
                 <li>
-                    <a className="p-ripple flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-900 hover:surface-100 font-medium border-round cursor-pointer transition-colors transition-duration-150 p-ripple">
+                    {/* <a className="p-ripple flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-900 hover:surface-100 font-medium border-round cursor-pointer transition-colors transition-duration-150 p-ripple">
                     <i className="pi pi-home mr-2"></i>
                     <span>BOOKING</span>
-                    </a>
+                    </a> */}
                     {/* <Link to={`/Contact`}>
 
                     <Ripple
@@ -49,21 +49,26 @@ function Header() {
                     }}
                 />
                     </Link> */}
-                    {/* <NavLink
-                    to="/"
+                    <NavLink
+                    to="/Bookings"
                     className="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-900 hover:surface-100 font-medium border-round cursor-pointer transition-colors transition-duration-150 p-ripple"
                     >
                     <i className="pi pi-home mr-2"></i>
-                    <span>Home</span>
-                    </NavLink> */}
+                    <span>Booking</span>
+                    <Ripple
+                pt={{
+                  root: { style: { background: "var(--primary-color)" } },
+                }}
+              />
+                    </NavLink>
                 </li>
                 <li className="lg:relative">
-                    <a className="p-ripple flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-900 hover:surface-100 font-medium border-round cursor-pointer transition-colors transition-duration-150 p-ripple">
+                    {/* <a className="p-ripple flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-900 hover:surface-100 font-medium border-round cursor-pointer transition-colors transition-duration-150 p-ripple">
                     <i className="pi pi-home mr-2"></i>
                     <span>CONTACT</span>
-                    </a>
-                    {/* <NavLink
-                    to="/ProjectGallery"
+                    </a> */}
+                    <NavLink
+                    to="/Contact"
                     className="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-900 hover:surface-100 font-medium border-round cursor-pointer transition-colors transition-duration-150 p-ripple"
                     style={{
                         selector: "@next",
@@ -75,11 +80,16 @@ function Header() {
                     }}
                     >
                     <i className="pi pi-image mr-2"></i>
-                    <span>Project Gallery</span>
-                    </NavLink> */}
+                    <span>Contact</span>
+                    <Ripple
+                pt={{
+                  root: { style: { background: "var(--primary-color)" } },
+                }}
+              />
+                    </NavLink>
                 </li>
                 <li>
-                    {/* <NavLink
+                    <NavLink
                     to="/Contact"
                     className="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-900 hover:surface-100 font-medium border-round cursor-pointer transition-colors transition-duration-150 p-ripple"
                     style={{
@@ -92,13 +102,38 @@ function Header() {
                     }}
                     >
                     <i className="pi pi-envelope mr-2"></i>
-                    </NavLink> */}
-                    <a className="p-ripple flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-900 hover:surface-100 font-medium border-round cursor-pointer transition-colors transition-duration-150 p-ripple">
+                    <span>Reservations</span>
+                    <Ripple
+                pt={{
+                  root: { style: { background: "var(--primary-color)" } },
+                }}
+              />
+                    </NavLink>
+                    {/* <a className="p-ripple flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-900 hover:surface-100 font-medium border-round cursor-pointer transition-colors transition-duration-150 p-ripple">
                     <i className="pi pi-home mr-2"></i>
-                    <span>NEAR YOU</span>
-                    </a>
+                    </a> */}
                 </li>
                 </ul>
+            </div>
+            <div className="header-logo">
+            <NavLink
+                  to="/"
+                  className="block text-white font-medium px-6 py-3 lg:px-3 lg:py-2 hover:text-900 hover:surface-100 border-round cursor-pointer transition-colors transition-duration-150 p-ripple"
+                >
+
+                <div className="logo">SUITESTAY</div>
+                <div className="lines-container">
+                <div className="line-left"></div>
+                <div className="hotel-sign">H O T E L</div>
+                <div className="line-right"></div>
+                
+                </div>
+                <Ripple
+                pt={{
+                  root: { style: { background: "var(--primary-color)" } },
+                }}
+              />
+                </NavLink>
             </div>
         </div>
     </div>
