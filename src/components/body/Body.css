@@ -1,5 +1,24 @@
 .body-container {
     display: flex;
     justify-content: space-around;
-    margin: 50px;
+    margin: 80px;
+}
+
+.intro-txt {
+    border-radius: 5px;
+    display: flex;
+    font-size:x-large;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.anouncement-container {
+    display: flex;
+    justify-content: center;
+    margin: 250px;
+}
+
+.anouncement-txt {
+    font-size: larger;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
