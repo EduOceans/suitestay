@@ -1,11 +1,56 @@
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .header-logo {
-    margin: 30px;
-    font-family:'Times New Roman', Times, serif;
+    margin: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.logo {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: "Philosopher", sans-serif;
+    color: white;
+    font-size: 115px;
+}
+
+.lines-container {
+    display: flex;
+    margin: 10px;
+}
+
+.line-left {
+    margin-top: 11px;
+    width: 300px;
+    margin-right: 20px;
+    height: 2px;
+    background-image: linear-gradient(265deg, #fff, rgba(0, 0, 0, 0));
+}
+
+.line-right {
+    margin-top: 11px;
+    margin-left: 20px;
+    width: 300px;
+    height: 2px;
+    background-image: linear-gradient(105deg, #fff, rgba(0, 0, 0, 0));
+}
+
+.hotel-sign {
+    color: white;
+    font-family: sans-serif;
     font-size: x-large;
-    text-decoration: inherit;
+}
+
+.menu {
+    color: white;
+    font-size: larger;
+    font-family: sans-serif;
 }
