@@ -1,0 +1,25 @@
+.anouncement-container {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    width: 80%;
+    margin: auto;
+}
+
+.eagles-img {
+    border-radius: 5px;
+}
+
+.anouncement-title {
+    font-family: philosopher;
+    font-size: x-large;
+}
+
+.eagles-img {
+    border-radius: 5px;
+}
+
+.anouncement-txt {
+    font-size: larger;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
