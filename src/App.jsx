@@ -1,17 +1,38 @@
-import './App.css'
-import Header from './components/header/Header';
-import Body from './components/body/Body';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+
+
+import "./App.css";
+
+import Header from "./components/header/Header";
+import Home from "./components/body/Body";
+import Contact from "./components/Contact/contact";
+import Bookings from "./components/bookings/Bookings";
+
+// import { StyleClass } from 'primereact/styleclass';
+import { PrimeReactProvider } from "primereact/api";
+
+import "primereact/resources/themes/arya-orange/theme.css"; //theme
+import "primereact/resources/primereact.min.css"; //core css
+import "primeflex/primeflex.css";
+import "primeicons/primeicons.css";
 
 function App() {
   return (
-    <>
-      <div className='app-container'>
+    <PrimeReactProvider value={{ ripple: true, StyleClass: true }}>
+      <Router>
         <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Bookings" element={<Bookings />} />
+        </Routes>
+      </Router>
+      {/* <div>
         <Body />
-      </div>
-    </>
-  )
+      </div> */}
+    </PrimeReactProvider>
+  );
 }
 
 export default App;
