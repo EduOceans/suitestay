@@ -8,7 +8,7 @@ function ImageButton ({ imgUrl, heading, subHeading, btnTxt }) {
             <div className='heading-txt'>{heading}</div>
             <div className='subheading-txt'>{subHeading}</div>
             <div className='button'>
-                <Button className="btn"label={btnTxt} icon="pi pi-check" />
+                <Button className="btn" label={btnTxt} icon="pi pi-check" />
             </div>
         </div>
     )
