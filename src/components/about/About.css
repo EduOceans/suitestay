@@ -1,0 +1,10 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: philosopher;
+    font-size:4vw;
+    color: #817474;
+    font-size: 3vw;
+    margin: 5vw;
+}

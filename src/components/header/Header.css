@@ -1,6 +1,7 @@
 .header {
     display: flex;
     justify-content: center;
+    
 }
 
 .header-logo {
@@ -20,11 +21,15 @@
     font-family: "Philosopher", sans-serif;
     color: white;
     font-size: 115px;
+    animation-duration: 1s;
+    animation-name: slidein;
 }
 
 .lines-container {
     display: flex;
     margin: 10px;
+    animation-duration: 1s;
+   animation-name: slidein;
 }
 
 .line-left {
@@ -53,4 +58,6 @@
     color: white;
     font-size: larger;
     font-family: sans-serif;
+    animation-duration: 1s;
+    animation-name: slide;
 }
