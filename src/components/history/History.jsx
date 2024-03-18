@@ -22,7 +22,6 @@ function History() {
                 <img src='src/assets/cheers.jpeg' className='cheers' alt='cheers'></img>
                 </div>
             </div>
-            
         </div>
     )
 }
