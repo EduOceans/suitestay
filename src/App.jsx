@@ -9,6 +9,7 @@ import Home from "./components/body/Body";
 import Contact from "./components/Contact/contact";
 import Bookings from "./components/bookings/Bookings";
 import Footer from "./components/footer/footer"
+import Navbar from "./components/navbar/navbar"
 
 // import { StyleClass } from 'primereact/styleclass';
 import { PrimeReactProvider } from "primereact/api";
@@ -23,13 +24,13 @@ function App() {
     <PrimeReactProvider value={{ ripple: true, StyleClass: true }}>
       <Router>
         <div className="app-container">
+        <Navbar />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Bookings" element={<Bookings />} />
         </Routes>
-        <Footer/>
         </div>
       </Router>
       {/* <div>

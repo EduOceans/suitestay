@@ -1,4 +1,4 @@
-.header {
+/* .header {
     display: flex;
     justify-content: center;
     
@@ -60,4 +60,110 @@
     font-family: sans-serif;
     animation-duration: 1s;
     animation-name: slide;
+} */
+
+* {
+    box-sizing: border-box;
 }
+
+.nav-links {
+  text-decoration: none;
+}
+
+.backgroundImage {
+  background-image: url(../../assets/background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: "Philosopher", sans-serif;
+  color: white;
+  font-size: 115px;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+.lines-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+.line-left {
+  margin-top: 11px;
+  width: 300px;
+  margin-right: 20px;
+  height: 2px;
+  background-image: linear-gradient(265deg, #fff, rgba(0, 0, 0, 0));
+}
+
+.line-right {
+  margin-top: 11px;
+  margin-left: 20px;
+  width: 300px;
+  height: 2px;
+  background-image: linear-gradient(105deg, #fff, rgba(0, 0, 0, 0));
+}
+
+.header-logo {
+  text-align: center;
+  width: 100%;
+}
+
+.hotel-sign {
+  color: black;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .backgroundImage {
+    height: 25vh; /* Adjust the height for smaller devices */
+  }
+
+  .logo {
+    font-size: 2rem; /* Adjust the font size for smaller devices */
+    width: 100%;
+  }
+
+  .hotel-sign {
+    font-size: 0.8rem;
+     /* Adjust the font size for smaller devices */
+     width: 28%;
+  }
+
+  .header-logo {
+    width: 100%;
+  }
+  .line-left {
+    margin-top: 11px;
+    width: 200px;
+    margin-right: 25px;
+    height: 2px;
+    background-image: linear-gradient(265deg, #fff, rgba(0, 0, 0, 0));
+  }
+  
+  .line-right {
+    margin-top: 11px;
+    margin-left: 25px;
+    width: 200px;
+    height: 2px;
+    background-image: linear-gradient(105deg, #fff, rgba(0, 0, 0, 0));
+  }
+}
+
+
