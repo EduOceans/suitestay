@@ -1,15 +1,12 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-
-
 import "./App.css";
-
 import Header from "./components/header/Header";
 import Home from "./components/body/Body";
 import Contact from "./components/Contact/contact";
 import Bookings from "./components/bookings/Bookings";
 import Footer from "./components/footer/footer"
 import Navbar from "./components/navbar/navbar"
+import Explore from "./components/Explore/explore"
 
 // import { StyleClass } from 'primereact/styleclass';
 import { PrimeReactProvider } from "primereact/api";
@@ -30,6 +27,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Bookings" element={<Bookings />} />
+          <Route path="/Explore" element={<Explore />} />
         </Routes>
         </div>
       </Router>
