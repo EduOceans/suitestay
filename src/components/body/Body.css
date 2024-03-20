@@ -1,14 +1,57 @@
 .body-container {
-    display: flex;
-    justify-content: space-around;
-    margin: 80px;
-    
+  display: flex;
+  justify-content: space-around;
+  margin: 80px;
 }
 
 .intro-txt {
-    border-radius: 5px;
-    display: flex;
-    font-size:x-large;
-    margin-left: 300px;
-    margin-right: 300px;
+  border-radius: 5px;
+  display: flex;
+  font-size: x-large;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.about {
+  color: #817474;
+  font-family: philosopher;
+}
+
+.background-image {
+  background-image: url(../../assets/anouncement-background-img.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-box-shadow: inset 0px 850px 500px -500px #fff;
+  -webkit-box-shadow: inset 0px 850px 500px -500px #fff;
+  -o-box-shadow: inset 0px 850px 500px -500px #fff;
+  box-shadow: inset 0px 850px 500px -500px #fff;
+}
+
+.rooftop-heading {
+  color: #817474;
+}
+
+.award-winning {
+  width: 80vh;
+  height: 40vh;
+  position: relative;
+  top: 500px;
+}
+
+@media screen and (max-width: 767px) {
+  .background-image {
+    height: 30vh; /* Adjust the height for smaller devices */
+  }
+
+  .award-winning {
+    width: 25vh;
+    height: 40vh;
+    position: relative;
+    top: 100px;
+  }
 }
