@@ -7,8 +7,6 @@ import Bookings from "./components/bookings/Bookings";
 import Footer from "./components/footer/footer"
 import Navbar from "./components/navbar/navbar"
 import Explore from "./components/Explore/explore"
-
-// import { StyleClass } from 'primereact/styleclass';
 import { PrimeReactProvider } from "primereact/api";
 
 import "primereact/resources/themes/bootstrap4-light-blue/theme.css"; //theme
@@ -26,14 +24,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="/Bookings" element={<Bookings />} />
           <Route path="/Explore" element={<Explore />} />
         </Routes>
         </div>
       </Router>
-      {/* <div>
-        <Body />
-      </div> */}
     </PrimeReactProvider>
   );
 }

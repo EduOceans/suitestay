@@ -1,4 +1,3 @@
-import React from "react";
 import { Menubar } from "primereact/menubar";
 import { useNavigate } from "react-router-dom";
 
@@ -8,13 +7,6 @@ function navbar(props) {
     {
       label: "Home",
       icon: "pi pi-envelope",
-      command: () => {
-        navigate("/");
-      },
-    },
-    {
-      label: "Booking",
-      icon: "pi pi-calendar",
       command: () => {
         navigate("/");
       },
