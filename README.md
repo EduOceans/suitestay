@@ -10,7 +10,8 @@ Welcome to SuiteStay. Its a one stop WebApplication for quickly performing reser
 - [Screenshots](#screenshots)
 - [Deployment](#deployment)
 - [How to Use](#how-to-use)
-- [Technology Used] (#Technology-Used)
+- [Technology Used](#Technology-Used)
+- [Project Team](#ProjectTeam)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -51,6 +52,14 @@ To run the application locally, follow these steps:
 2. Javascript and ReactJS
 3. NPM and Vite
 4. For Framework : PrimeReact(https://primereact.org/)
+
+## Project Team
+
+1. EduOceans Eduardo Aller 
+2. vivekiyer7 Vivek Iyer
+3. KaleimS KaleimS
+4. khubaibshah khubaib ul haque
+5. Debasis Maitra
 
 ## Contributing
 
