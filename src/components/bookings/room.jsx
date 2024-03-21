@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { useParams } from "react-router-dom";
 import hotelRooms from "./hotelRooms";
+import { Calendar } from "primereact/calendar";
 
 import { Link } from "react-router-dom";
 import { Button } from "primereact/button";
 import { Rating } from "primereact/rating";
+import { Dialog } from "primereact/dialog";
+
+import { InputText } from "primereact/inputtext";
+import { Toast } from "primereact/toast";
+
 export default function Room() {
   // Access the room number from URL parameters
   let { roomNumber } = useParams();
-
+  const [showDialog, setShowDialog] = useState(false);
+  const [date, setDate] = useState(null);
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const toast = useRef(null);
   // Function to find the room by room number
   const findRoomByNumber = (roomNumber) => {
     for (const roomType in hotelRooms) {
@@ -21,7 +31,37 @@ export default function Room() {
     }
     return null;
   };
+  const handleBookingButtonClick = () => {
+    setShowDialog(true);
+  };
 
+  const onHide = () => {
+    setShowDialog(false);
+  };
+
+  const handleSubmit = () => {
+    // Construct booking details object
+    const bookingDetails = {
+      firstName: firstName,
+      lastName: lastName,
+      date: date ? date.toString() : null,
+      room: findRoomByNumber(roomNumber)
+    };
+  
+    // Save booking details to local storage
+    localStorage.setItem("bookingDetails", JSON.stringify(bookingDetails));
+  
+    // Show confirmation toast message
+    toast.current.show({
+      severity: "success",
+      summary: "Booking Successful",
+      detail: "Your booking has been confirmed.",
+      life: 3000,
+    });
+  
+    // Close the dialog
+    setShowDialog(false);
+  };
   // Get the room based on the room number
   const room = findRoomByNumber(roomNumber);
 
@@ -35,9 +75,6 @@ export default function Room() {
         <div className="grid">
           <div className="col-12 lg:col-6">
             <div className="flex">
-              {/* <div>
-              <img src="images/blocks/ecommerce/productoverview/product-overview-1-1.png" className="w-full" alt="Product Overview" />
-            </div> */}
               <div className="flex flex-column px-3">
                 <Link to="/Rooms">
                   <Button
@@ -80,24 +117,11 @@ export default function Room() {
               </span>
             </div>
             <div className="flex align-items-center justify-content-between lg:justify-content-start mb-5">
-              {/* <span className="mr-3">
-              <i className="pi pi-star-fill text-yellow-500 mr-1"></i>
-              <i className="pi pi-star-fill text-yellow-500 mr-1"></i>
-              <i className="pi pi-star-fill text-yellow-500 mr-1"></i>
-              <i className="pi pi-star-fill text-yellow-500 mr-1"></i>
-              <i className="pi pi-star-fill text-yellow-500 mr-1"></i>
-            </span> */}
               <Rating value={room.rating} readOnly cancel={false} />
             </div>
             <p className="p-0 mt-0 mb-5 line-height-3 text-700">
               {room.roomDetails.roomDescription}
             </p>
-            {/* <div className="font-bold text-900 mb-3">Color</div>
-          <div className="flex align-items-center mb-5">
-            <div className="w-2rem h-2rem flex-shrink-0 border-circle bg-cyan-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"></div>
-            <div className="w-2rem h-2rem flex-shrink-0 border-circle bg-purple-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"></div>
-            <div className="w-2rem h-2rem flex-shrink-0 border-circle bg-indigo-500 cursor-pointer border-2 surface-border transition-all transition-duration-300"></div>
-          </div> */}
             <div className="mb-3 flex align-items-center justify-content-between">
               <span className="font-bold text-900">T&C's</span>
               <a
@@ -107,13 +131,6 @@ export default function Room() {
                 T&C's<i className="ml-1 pi pi-angle-right"></i>
               </a>
             </div>
-            {/* <div className="flex align-items-center mb-5">
-            <div className="h-2rem w-2rem sm:h-3rem sm:w-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors">XS</div>
-            <div className="h-2rem w-2rem sm:h-3rem sm:w-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors">S</div>
-            <div className="h-2rem w-2rem sm:h-3rem sm:w-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors">M</div>
-            <div className="h-2rem w-2rem sm:h-3rem sm:w-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors">L</div>
-            <div className="h-2rem w-2rem sm:h-3rem sm:w-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors">XL</div>
-          </div> */}
             <div className="bg-yellow-200 text-yellow-900 text-sm inline-flex align-items-center px-2 py-1 font-medium mb-2">
               <i className="pi pi-exclamation"></i>
               <span>Only a few Rooms left!</span>
@@ -128,7 +145,67 @@ export default function Room() {
               icon="pi pi-shopping-cart"
               className="w-full mb-5"
               label="Make a Booking"
+              onClick={handleBookingButtonClick}
             ></Button>
+            <Dialog
+              visible={showDialog}
+              onHide={onHide}
+              header="Enter Your Details"
+              style={{ width: "50vw" }}
+              breakpoints={{ "960px": "75vw", "641px": "100vw" }}
+              footer={
+                <div>
+                  <Button
+                    label="Cancel"
+                    icon="pi pi-times"
+                    onClick={onHide}
+                    className="p-button-text"
+                  />
+                  <Button
+                    label="Submit"
+                    icon="pi pi-check"
+                    onClick={handleSubmit}
+                    autoFocus
+                  />
+                </div>
+              }
+            >
+              <div className="grid">
+                <div className="col-12">
+                  <label htmlFor="firstname1">Firstname</label>
+                  <InputText
+                    id="firstname1"
+                    type="text"
+                    className="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                  />
+                </div>
+                <div className="col-12">
+                  <label htmlFor="lastname1">Lastname</label>
+                  <InputText
+                    id="lastname1"
+                    type="text"
+                    className="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                  />
+                </div>
+                <div className="col-12">
+                  <label htmlFor="date">Date</label>
+                  <Calendar
+                    id="date"
+                    value={date}
+                    onChange={(e) => setDate(e.value)}
+                    touchUI
+                    className="w-full"
+                  />
+                </div>
+              </div>
+            </Dialog>
+
+            <Toast ref={toast} />
+
             <ul className="list-none p-0 m-0 text-sm text-600">
               <li className="flex align-items-center mb-3">
                 <i className="pi pi-send mr-2"></i>
@@ -146,19 +223,6 @@ export default function Room() {
           </div>
         </div>
       </div>
-
-      {/* <h2>Room {room.roomNumber}</h2>
-      <img src={room.img} alt={`Room ${room.roomNumber}`} />
-      <p>Capacity: {room.capacity}</p>
-      <p>Price per Night: £{room.pricePerNight}</p>
-      <p>Room Area: {room.roomDetails.roomArea}</p>
-      <p>Rating: {room.rating}</p>
-      <h3>Amenities:</h3>
-      <ul>
-        {room.roomDetails.amenities.map((amenity, index) => (
-          <li key={index}>{amenity}</li>
-        ))}
-      </ul> */}
     </div>
   );
 }
