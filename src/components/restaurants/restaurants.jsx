@@ -4,7 +4,7 @@ import { DataView, DataViewLayoutOptions } from 'primereact/dataview'
 import { Rating } from 'primereact/rating'
 import { classNames } from 'primereact/utils'
 
-export default function BasicDemo() {
+export default function Explore() {
     const [products, setProducts] = useState([])
     const [layout, setLayout] = useState('grid')
 
@@ -25,6 +25,7 @@ export default function BasicDemo() {
                         className='w-9 sm:w-16rem xl:w-10rem shadow-2 block xl:block mx-auto border-round'
                         src={`${product.image}`}
                         alt={product.name}
+                        height={"100"}
                     />
                     <div className='flex flex-column sm:flex-row justify-content-center align-items-center xl:align-items-start flex-1 gap-4'>
                         <div className='flex flex-column align-items-center sm:align-items-start gap-3'>

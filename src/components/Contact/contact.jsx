@@ -36,7 +36,7 @@ export default function Contact() {
   return (
     <div className="">
       <div className="surface-0">
-        <div className="text-900 font-bold text-6xl mb-4 text-center pt-5 border-top-3">
+        <div className="text-900 font-bold text-6xl mb-4 text-center pt-5">
           GET IN TOUCH WITH US
         </div>
         <div className="text-700 text-xl mb-6 text-center line-height-3">

@@ -2,15 +2,11 @@ import React from 'react';
 import { TabView, TabPanel } from 'primereact/tabview';
 import Restaurants from '../restaurants/restaurants';
 
-export default function BasicDemo() {
+export default function Explore() {
     return (
         <div className="card">
             <TabView>
-                <TabPanel header="Places To See NearBy">
-                    // Add the content to display map and places to see
-
-                </TabPanel>
-                <TabPanel header="Restruants NearBy">
+                <TabPanel header="Restaurants NearBy">
                     <Restaurants />
                 </TabPanel>
             </TabView>
