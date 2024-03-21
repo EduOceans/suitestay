@@ -31,8 +31,6 @@ Welcome to SuiteStay. Its a one stop WebApplication for quickly performing reser
 
 
 
-
-
 ## Deployment
 
 1. Site is live at <https://suitestay.netlify.app>
@@ -40,11 +38,17 @@ Welcome to SuiteStay. Its a one stop WebApplication for quickly performing reser
 
 ![Screenshot1](/src/assets/finished_page/QR_Code.png)
 
+## How to Run the app
+
 To run the application locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/EduOceans/suitestay.git`
-2. Browse the Directory and run `npm install && npm run dev` in terminal.
-3. Once the Build is successful open preffered browser and open website locally using `http://localhost:5173/`
+1. Clone the repository:
+   ```
+   git clone https://github.com/EduOceans/suitestay.git
+   cd suitestay 
+   npm install && npm run dev
+   ``` 
+2. Once the Build is successful open preffered browser and open website locally using `http://localhost:5173/`
 
 ## How to Use
 
