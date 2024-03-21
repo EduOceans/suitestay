@@ -36,7 +36,7 @@ const hotelRooms = {
             roomNumber: 102,
             capacity: 2,
             pricePerNight: 100,
-            bookedDates: [], // Array to store booked dates for this room
+            bookedDates: [],
             rating: 2,
             img:singleRoom2,
             roomDetails: {
@@ -58,7 +58,7 @@ const hotelRooms = {
                 ]
             }
         },
-        // Add more standard rooms here
+        // need to add more standard rooms maybe
     ],
     "deluxe": [
         {
@@ -121,7 +121,7 @@ const hotelRooms = {
                 ]
             }
         },
-        // Add more deluxe rooms here
+        // need to add more standard rooms maybe
     ],
     "suite": [
         {
@@ -195,7 +195,7 @@ const hotelRooms = {
         },
         // Add more suite rooms here
     ],
-    // Add more room types if needed
+    //more room types can be added here
 };
 
 export default hotelRooms;
