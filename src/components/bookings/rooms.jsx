@@ -14,7 +14,7 @@ function HotelRooms() {
             <div className="text-3xl font-medium text-900 mb-3">
               Available Rooms
             </div>
-            <div className="text-500 mr-0 md:mr-3">
+            <div className="text-700 mr-0 md:mr-3">
               Experience luxury redefined at Suitestay – Where Every Stay is a
               Suite Escape.
             </div>

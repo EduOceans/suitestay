@@ -1,13 +1,13 @@
 function footer() {
   return (
     <div className="surface-section px-4 py-6 md:px-6 lg:px-8 text-center">
-      <img
+      {/* <img
         src="images/blocks/logos/bastion-purple.svg"
         alt="Image"
         height="50"
-      />
+      /> */}
       <div className="font-medium text-900 mt-4 mb-3">
-        &copy; 2023 Bastion, Inc
+        &copy; 2024 SuitStay, Inc
       </div>
       <p className="text-600 line-height-3 mt-0 mb-4">
         Cursus metus aliquam eleifend mi. Malesuada pellentesque elit eget

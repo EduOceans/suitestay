@@ -7,7 +7,7 @@ import SuiteRoom2 from '../../assets/suitroom2.jpg'
 const hotelRooms = {
     "standard": [
         {
-            type: 'Standard',
+            type: 'Standard Room',
             roomNumber: 101,
             capacity: 2,
             pricePerNight: 100,
@@ -32,7 +32,7 @@ const hotelRooms = {
             }
         },
         {
-            type: 'Standard',
+            type: 'Standard Room',
             roomNumber: 102,
             capacity: 2,
             pricePerNight: 100,
@@ -62,7 +62,7 @@ const hotelRooms = {
     ],
     "deluxe": [
         {
-            type: 'Deluxe',
+            type: 'Deluxe Room',
             roomNumber: 201,
             capacity: 3,
             pricePerNight: 150,
@@ -71,6 +71,7 @@ const hotelRooms = {
             img: deluxeRoom,
             roomDetails: {
                 roomArea: "35m²",
+                roomDescription: 'The luxuriously elegant suites at the award-winning Grand Palace Hotel are designed to satisfy the most discerning tastes. The welcoming atmosphere, together with the impeccable service of our staff, ensures that our guests will enjoy their experience in Riga, and take with them many fond memories of this historic city.',
                 amenities: [
                     "FREE WI-FI",
                     "Air conditioned",
@@ -91,7 +92,7 @@ const hotelRooms = {
             }
         },
         {
-            type: 'Deluxe',
+            type: 'Deluxe Room',
             roomNumber: 202,
             capacity: 3,
             pricePerNight: 150,
@@ -125,7 +126,7 @@ const hotelRooms = {
     ],
     "suite": [
         {
-            type: 'Suite',
+            type: 'Suite Room',
             roomNumber: 301,
             capacity: 4,
             pricePerNight: 200,
@@ -159,7 +160,7 @@ const hotelRooms = {
             }
         },
         {
-            type: 'Suite',
+            type: 'Suite Room',
             roomNumber: 302,
             capacity: 4,
             pricePerNight: 200,
