@@ -2,6 +2,9 @@ import Bookings from "../bookings/Bookings";
 import History from "../history/History";
 import ImageButton from "../imageButton/ImageButton";
 import "./Body.css";
+import deluxeRoom from '../../assets/deluxeroom.jpeg';
+import penthousesuite from '../../assets/penthousesuite.jpeg';
+import premiersuite from '../../assets/premiersuite.jpeg';
 
 function Body() {
   return (
@@ -10,17 +13,17 @@ function Body() {
         <div className="surface-0">
             <div className="grid justify-content-around overflow-hidden pt-5">
                 <ImageButton 
-                    imgUrl={"src/assets/deluxeroom.jpeg"}
+                    imgUrl={deluxeRoom}
                     heading={"£300/night"}
                     subHeading={"Deluxe room"}
                 /> 
                 <ImageButton 
-                    imgUrl={"src/assets/penthousesuite.jpeg"}
+                    imgUrl={penthousesuite}
                     heading={"£450/night"}
                     subHeading={"Ocean view suite"}
                 /> 
                 <ImageButton 
-                    imgUrl={"src/assets/premiersuite.jpeg"}
+                    imgUrl={premiersuite}
                     heading={"£670/night"}
                     subHeading={"Premier suite"}
                 /> 
