@@ -11,8 +11,10 @@ function Body() {
                     <ImageButton 
                         imgUrl={"https://www.iconsuites.com/_storageWeb_/n/17804265468969/ig/5497749322264/b/692033667068/isk/half/ZON_1994-Edit_wide.jpeg"}
                         heading={"Gallery"}
+                        btnurl={"/Gallery"}
                         subHeading={"You can browse our wonderful suites"}
                         btnTxt={"View suites"}/>
+                        
                     <ImageButton
                         imgUrl={"https://webrezpro.com/wp-content/uploads/2022/11/HoldThePhone-BeConfident.jpg"}
                         heading={"Check availability"}

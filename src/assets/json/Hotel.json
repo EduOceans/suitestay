@@ -1,0 +1,110 @@
+{
+  "title": "Room Types in Hotels",
+  "hotel_rooms": [
+    {
+      "type": "Studio Suite",
+      "description": "A cozy studio self catering suite perfect for solo travelers or couples. This room includes:",
+      "amenities": [
+        "Welcome towels included",
+        "Double glazed, central heating",
+        "Beds made on arrival",
+        "Flatscreen TV in the Lounge with Freeview",
+        "Crockery, Cutlery, Glasses & Utensils",
+        "Microwave, Kettle & Toaster",
+        "Pots & Pans",
+        "Cooker & Oven",
+        "Fridge/Freezer",
+        "Pillows & linen included",
+        "Bathroom"
+      ]
+    },
+
+    {
+      "type": "One-Bedroom Suite",
+      "description": "A spacious one-bedroom self catering suite suitable for small families or groups of friends. This room includes:",
+      "amenities": [
+        "Welcome towels included",
+        "Double glazed, central heating",
+        "Beds made on arrival",
+        "Flatscreen TV in the Lounge with Freeview",
+        "Crockery, Cutlery, Glasses & Utensils",
+        "Microwave, Kettle & Toaster",
+        "Pots & Pans",
+        "Cooker & Oven",
+        "Fridge/Freezer",
+        "Pillows & linen included",
+        "Bathroom",
+        "Dogs welcome (must be added to booking)"
+      ]
+    },
+    {
+      "type": "Two-Bedroom Suite",
+      "description": "A comfortable two-bedroom self catering suite perfect for families or larger groups. This room includes:",
+      "amenities": [
+        "Welcome towels included",
+        "Double glazed, central heating",
+        "Outdoor decking with furniture",
+        "Beds made on arrival",
+        "Flatscreen TV in the Lounge with Freeview",
+        "Crockery, Cutlery, Glasses & Utensils",
+        "Microwave, Kettle & Toaster",
+        "Pots & Pans",
+        "Cooker & Oven",
+        "Fridge/Freezer",
+        "Pillows & linen included",
+        "Beds with 10.5 tog duvets and comfy pillows",
+        "Bathroom",
+        "Dogs welcome (must be added to booking)",
+        "Onsite gym",
+        "Indoor heated swimming pool",
+        "Jacuzzi",
+        "Multi-cuisine restaurant which is open 24/7"
+      ]
+    },
+    {
+      "type": "Luxury Penthouse",
+      "description": "An extravagant penthouse suite with stunning views of London. This room includes:",
+      "amenities": [
+        "Welcome towels included",
+        "Double glazed, central heating",
+        "Beds made on arrival",
+        "Smart home automation system",
+        "Private terrace with hot tub",
+        "24-hour concierge service",
+        "Complimentary champagne upon arrival",
+        "Spa-like bathroom with rain shower and luxury toiletries",
+        "King-sized bed with premium linens",
+        "Exclusive access to rooftop bar and lounge"
+      ]
+    },
+    {
+      "type": "Historic Townhouse",
+      "description": "A charming historic townhouse nestled in a picturesque neighborhood. This room includes:",
+      "amenities": [
+        "Welcome towels included",
+        "Original period features",
+        "Fully equipped kitchen with vintage appliances",
+        "Cozy fireplace in the living room",
+        "Private garden with outdoor dining area",
+        "Antique furnishings and decor",
+        "Complimentary breakfast basket delivered daily",
+        "Close proximity to local attractions and public transportation"
+      ]
+    },
+
+    {
+      "type": "Modern Loft",
+      "description": "A stylish and contemporary loft apartment in the heart of London. This room includes:",
+      "amenities": [
+        "Welcome towels included",
+        "Floor-to-ceiling windows with city views",
+        "Open-plan layout with designer furnishings",
+        "Fully equipped kitchen with stainless steel appliances",
+        "High-speed Wi-Fi and Smart TV with streaming services",
+        "Queen-sized bed with memory foam mattress",
+        "Fitness center and rooftop terrace in the building",
+        "Walking distance to trendy cafes, shops, and nightlife"
+      ]
+    }
+  ]
+}
