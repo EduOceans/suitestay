@@ -22,10 +22,16 @@ Welcome to SuiteStay. Its a one stop WebApplication for quickly performing reser
 - **Integration of External API**
 
 ## Screenshots
+![image](https://github.com/EduOceans/suitestay/assets/150608334/c40ffd46-9cbd-4257-8b59-0f8f0399a0df)
+![image](https://github.com/EduOceans/suitestay/assets/150608334/d3902774-b07d-4ef9-8f3d-0277679fb424)
+![image](https://github.com/EduOceans/suitestay/assets/150608334/7946f139-c7d7-4477-b217-68fa5723fe59)
+![image](https://github.com/EduOceans/suitestay/assets/150608334/03e9bb11-2e07-4281-9ddd-f866deec594c)
+![image](https://github.com/EduOceans/suitestay/assets/150608334/37967af7-8540-419f-bf05-c80830110280)
 
-![Screenshot1](/src/assets/finished_page/screenshot_1.JPG)
-![Screenshot2](/src/assets/finished_page/screenshot_2.JPG)
-![Screenshot3](/src/assets/finished_page/screenshot_3.JPG)
+
+
+
+
 
 ## Deployment
 
@@ -55,10 +61,10 @@ To run the application locally, follow these steps:
 
 ## Project Team
 
-1. EduOceans Eduardo Aller 
-2. vivekiyer7 Vivek Iyer
-3. KaleimS KaleimS
-4. khubaibshah khubaib ul haque
+1. EduOceans - Eduardo Aller 
+2. vivekiyer7  - Vivek Iyer
+3. KaleimS - Kaleim Saunders
+4. khubaibshah - khubaib ul haque
 5. Debasis Maitra
 
 ## Contributing
