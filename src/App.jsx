@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./components/header/Header";
 import Home from "./components/body/Body";
 import Contact from "./components/Contact/contact";
-import Bookings from "./components/bookings/Bookings";
+import Rooms from "./components/bookings/rooms";
 import Footer from "./components/footer/footer"
 import Navbar from "./components/navbar/navbar"
 import Explore from "./components/Explore/explore"
@@ -26,9 +26,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="/Bookings" element={<Bookings />} />
+          <Route path="/Rooms" element={<Rooms />} />
           <Route path="/Explore" element={<Explore />} />
         </Routes>
+        <Footer />
         </div>
       </Router>
       {/* <div>

@@ -13,10 +13,10 @@ function navbar(props) {
       },
     },
     {
-      label: "Booking",
+      label: "Rooms",
       icon: "pi pi-calendar",
       command: () => {
-        navigate("/");
+        navigate("/Rooms");
       },
     },
     {
