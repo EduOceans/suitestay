@@ -10,17 +10,17 @@ function Body() {
         <div className="surface-0">
             <div className="grid justify-content-around overflow-hidden pt-5">
                 <ImageButton 
-                    imgUrl={"https://assets.website-files.com/64be07bb1f833c7c8821b67c/64bfda83ce7792ff7034126a_DeluxeRoom.jpg"}
+                    imgUrl={"src/assets/deluxeroom.jpeg"}
                     heading={"£300/night"}
                     subHeading={"Deluxe room"}
                 /> 
                 <ImageButton 
-                    imgUrl={"https://assets.website-files.com/64be07bb1f833c7c8821b67c/64bfe055d6a432f7de96be21_PenthouseSuite.jpg"}
+                    imgUrl={"src/assets/penthousesuite.jpeg"}
                     heading={"£450/night"}
                     subHeading={"Ocean view suite"}
                 /> 
                 <ImageButton 
-                    imgUrl={"https://assets.website-files.com/64be07bb1f833c7c8821b67c/64bfdca47f54ac3ff269a282_PremierSuite2.jpg"}
+                    imgUrl={"src/assets/premiersuite.jpeg"}
                     heading={"£670/night"}
                     subHeading={"Premier suite"}
                 /> 
