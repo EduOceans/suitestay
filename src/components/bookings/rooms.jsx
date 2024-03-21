@@ -4,7 +4,7 @@ import { InputText } from "primereact/inputtext";
 import { Ripple } from "primereact/ripple";
 import { Rating } from "primereact/rating";
 import { Link } from "react-router-dom";
-
+import "./rooms.css"; // Import CSS file for styling
 function HotelRooms() {
   return (
     <div>
@@ -37,7 +37,7 @@ function HotelRooms() {
                 className="col-12 md:col-6 lg:col-4 md:border-right-1 border-bottom-1 surface-border p-ripple"
                 key={room.roomNumber}
               >
-                <Link to={`/room/${room.roomNumber}`}>
+                <Link to={`/room/${room.roomNumber}`} className="room-link"> 
                   <Ripple
                     pt={{
                       root: { style: { background: "var(--primary-color)" } },

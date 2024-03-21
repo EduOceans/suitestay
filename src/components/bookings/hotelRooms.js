@@ -16,6 +16,7 @@ const hotelRooms = {
             img: singleRoom,
             roomDetails: {
                 roomArea: "28m²",
+                roomDescription: 'Our single rooms offer comfort and convenience for solo travelers or couples seeking an intimate retreat. Featuring a cozy atmosphere and thoughtful amenities, these rooms provide a peaceful sanctuary after a day of exploration or business meetings. Enjoy a restful nights sleep on a plush bed, catch up on work at the dedicated desk area, and unwind with entertainment options on the flat-screen television. The ensuite bathroom offers modern fixtures and complimentary toiletries for your convenience. With complimentary Wi-Fi and air conditioning, our single rooms ensure a comfortable stay for every guest.',
                 amenities: [
                     "FREE WI-FI",
                     "Air conditioned",
@@ -41,6 +42,7 @@ const hotelRooms = {
             img:singleRoom2,
             roomDetails: {
                 roomArea: "28m²",
+                roomDescription: 'Our single rooms offer comfort and convenience for solo travelers or couples seeking an intimate retreat. Featuring a cozy atmosphere and thoughtful amenities, these rooms provide a peaceful sanctuary after a day of exploration or business meetings. Enjoy a restful nights sleep on a plush bed, catch up on work at the dedicated desk area, and unwind with entertainment options on the flat-screen television. The ensuite bathroom offers modern fixtures and complimentary toiletries for your convenience. With complimentary Wi-Fi and air conditioning, our single rooms ensure a comfortable stay for every guest.',
                 amenities: [
                     "FREE WI-FI",
                     "Air conditioned",
@@ -101,6 +103,8 @@ const hotelRooms = {
             rating: 3,
             roomDetails: {
                 roomArea: "35m²",
+                roomDescription: 'The luxuriously elegant suites at the award-winning Grand Palace Hotel are designed to satisfy the most discerning tastes. The welcoming atmosphere, together with the impeccable service of our staff, ensures that our guests will enjoy their experience in Riga, and take with them many fond memories of this historic city.',
+
                 amenities: [
                     "FREE WI-FI",
                     "Air conditioned",
@@ -135,6 +139,7 @@ const hotelRooms = {
             rating: 5,
             roomDetails: {
                 roomArea: "45m²",
+                roomDescription: 'Indulge in luxury and sophistication with our spacious suites, designed to exceed your expectations for comfort and elegance. Perfect for discerning travelers or those seeking an extra touch of indulgence, our suites offer ample space for relaxation and entertainment. Step into a stylishly furnished living area, complete with plush seating and modern decor, ideal for unwinding or hosting guests. The separate bedroom area features a sumptuous king-size bed adorned with premium linens, ensuring a restful nights sleep. Pamper yourself in the lavish ensuite bathroom, equipped with a luxurious bathtub, walk-in shower, and deluxe amenities. Enjoy breathtaking views from the private balcony or terrace, offering a serene oasis amidst the bustling cityscape. With personalized concierge service and exclusive access to premium facilities, our suites redefine the concept of luxury accommodation.',
                 amenities: [
                     "FREE WI-FI",
                     "Air conditioned",
@@ -169,6 +174,7 @@ const hotelRooms = {
             rating: 5,
             roomDetails: {
                 roomArea: "45m²",
+                roomDescription: 'Indulge in luxury and sophistication with our spacious suites, designed to exceed your expectations for comfort and elegance. Perfect for discerning travelers or those seeking an extra touch of indulgence, our suites offer ample space for relaxation and entertainment. Step into a stylishly furnished living area, complete with plush seating and modern decor, ideal for unwinding or hosting guests. The separate bedroom area features a sumptuous king-size bed adorned with premium linens, ensuring a restful nights sleep. Pamper yourself in the lavish ensuite bathroom, equipped with a luxurious bathtub, walk-in shower, and deluxe amenities. Enjoy breathtaking views from the private balcony or terrace, offering a serene oasis amidst the bustling cityscape. With personalized concierge service and exclusive access to premium facilities, our suites redefine the concept of luxury accommodation.',
                 amenities: [
                     "FREE WI-FI",
                     "Air conditioned",
