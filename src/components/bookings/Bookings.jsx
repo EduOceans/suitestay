@@ -1,10 +1,9 @@
 import { useState } from "react";
 
 import { Button } from 'primereact/button';
-
+import { Dialog } from 'primereact/dialog';
 import { Calendar } from 'primereact/calendar';
 import { Dropdown } from 'primereact/dropdown';
-
 
 
 function Bookings () {
@@ -26,6 +25,26 @@ function Bookings () {
         { name: 'Premier suite', code: 'PS' },
     ];
 
+    const [visible, setVisible] = useState(false);
+
+    const formatDate = (date) => {
+        
+        return (!date) ? '' : `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`
+    }
+
+    const onClick = () => {
+        console.log('click');
+
+        const booking = {
+            date: date,
+            nights: selectedNumberNights.code,
+            roomType: selectedRoom.code,
+        }
+        localStorage.setItem("booking", JSON.stringify(booking));
+
+        setVisible(true);
+    }
+
     return (
         <div className="flex justify-content-center booking-section">
             <div className="card flex justify-content-center check-in mt-5 mr-5">
@@ -40,9 +59,17 @@ function Bookings () {
                     placeholder="Rooms" className="w-full md:w-14rem" />
             </div>  
             <div className="card flex justify-content-center mt-5 mr-5">
-                <Button type="submit" label="Submit" />
+                <Button type="submit" label="Submit" onClick={onClick}/>
             </div>
-            
+            <div className="card flex justify-content-center">
+                <Dialog header="Confirmation" visible={visible} style={{ width: '50vw' }} onHide={() => setVisible(false)}>
+                    <p className="m-0">
+                        We are delighted to let you know that your booking of <b>{selectedRoom?.name} </b>
+                        has been confirmed for <b>{formatDate(date)}</b>.
+                        <p>We cannot wait to see you!</p>
+                    </p>
+                </Dialog>
+            </div>
         </div>
     )
 }
