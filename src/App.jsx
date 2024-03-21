@@ -27,6 +27,7 @@ function App() {
           <Route path="/Explore" element={<Explore />} />
         </Routes>
         </div>
+        <Footer/>
       </Router>
     </PrimeReactProvider>
   );

@@ -68,7 +68,7 @@
 
 @media screen and (max-width: 767px) {
   .backgroundImage {
-    height: 25vh; /* Adjust the height for smaller devices */
+    height: 35vh; /* Adjust the height for smaller devices */
   }
 
   .logo {
