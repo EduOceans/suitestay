@@ -32,6 +32,7 @@ function App() {
           <Route path="/Bookings" element={<Bookings />} />
         </Routes>
         </div>
+        <Footer/>
       </Router>
       {/* <div>
         <Body />
