@@ -1,4 +1,5 @@
 # SuiteStay
+[![Netlify Status](https://api.netlify.com/api/v1/badges/983ed994-1cbc-45e3-894f-51c1f058f8a0/deploy-status)](https://app.netlify.com/sites/suitestay/deploys)
 
 ## Overview
 
