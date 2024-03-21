@@ -2,9 +2,17 @@ body {
   margin: 0;
 }
 
-/* .app-container {
-  
-  background: url('assets/background.jpeg') no-repeat;
-  background-size: contain;
-  
-} */
+div.text-600,
+div.text-900,
+h1, h2, h3 {
+    font-family: "Philosopher", sans-serif;
+    color: #817474 !important;
+}
+
+.p-button {
+    background-color: #817474 !important;
+}
+
+.p-inputtext:enabled:focus {
+    border-color: #817474 !important;
+}
