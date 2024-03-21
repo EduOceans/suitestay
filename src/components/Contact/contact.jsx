@@ -36,7 +36,7 @@ export default function Contact() {
   return (
     <div className="">
       <div className="surface-0">
-        <div className="text-900 font-bold text-6xl mb-4 text-center pt-5 border-top-3">
+        <div className="text-900 font-bold text-6xl mb-4 text-center pt-5">
           GET IN TOUCH WITH US
         </div>
         <div className="text-700 text-xl mb-6 text-center line-height-3">
@@ -58,15 +58,15 @@ export default function Contact() {
 
                 <hr className="my-3 mx-0 border-top-1 border-bottom-none border-300 border-white-400" />
                 <div className="text-center">
-                  <i class="pi pi-phone pr-2"></i>
+                  <i className="pi pi-phone pr-2"></i>
                   <span className="">Phone: </span>
-                  <a href="tel://01234567890">01234567890</a>
+                  <a href="tel://1234567890">01234567890</a>
                 </div>
                 <hr className="my-3 mx-0 border-top-1 border-bottom-none border-300 border-white-400" />
                 <div className="text-center">
                   <i className="pi pi-envelope pr-2"></i>
                   <span className="">Email: </span>
-                  <a href="mailto:Suitestay@gmail.com">Suitestay@gmail.com</a>
+                  <a href="mailto:suitestay@gmail.com">suitestay@gmail.com</a>
                 </div>
                 <hr className="my-3 mx-0 border-top-1 border-bottom-none border-300 border-white-400" />
                 <div className="text-center">

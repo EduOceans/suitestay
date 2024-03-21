@@ -1,6 +1,4 @@
-import React from "react";
 import { Menubar } from "primereact/menubar";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 function navbar(props) {
@@ -14,15 +12,15 @@ function navbar(props) {
       },
     },
     {
-      label: "Contact",
-      icon: "pi pi-phone",
+      label: "Explore",
+      icon: "pi pi-search",
       command: () => {
-        navigate("/contact");
+        navigate("/explore");
       },
     },
     {
-      label: "Reservations",
-      icon: "pi pi-calendar",
+      label: "Contact",
+      icon: "pi pi-phone",
       command: () => {
         navigate("/contact");
       },

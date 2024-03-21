@@ -1,67 +1,3 @@
-/* .header {
-    display: flex;
-    justify-content: center;
-    
-}
-
-.header-logo {
-    margin: 90px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.logo {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    font-size: 17px;
-    font-weight: 400;
-    text-decoration: none;
-    font-family: "Philosopher", sans-serif;
-    color: white;
-    font-size: 115px;
-    animation-duration: 1s;
-    animation-name: slidein;
-}
-
-.lines-container {
-    display: flex;
-    margin: 10px;
-    animation-duration: 1s;
-   animation-name: slidein;
-}
-
-.line-left {
-    margin-top: 11px;
-    width: 300px;
-    margin-right: 20px;
-    height: 2px;
-    background-image: linear-gradient(265deg, #fff, rgba(0, 0, 0, 0));
-}
-
-.line-right {
-    margin-top: 11px;
-    margin-left: 20px;
-    width: 300px;
-    height: 2px;
-    background-image: linear-gradient(105deg, #fff, rgba(0, 0, 0, 0));
-}
-
-.hotel-sign {
-    color: white;
-    font-family: sans-serif;
-    font-size: x-large;
-}
-
-.menu {
-    color: white;
-    font-size: larger;
-    font-family: sans-serif;
-    animation-duration: 1s;
-    animation-name: slide;
-} */
-
 * {
     box-sizing: border-box;
 }
@@ -125,7 +61,7 @@
 }
 
 .hotel-sign {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 
