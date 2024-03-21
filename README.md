@@ -1,4 +1,3 @@
-
 # SuiteStay
 
 ## Overview
@@ -11,6 +10,7 @@ Welcome to SuiteStay. Its a one stop WebApplication for quickly performing reser
 - [Screenshots](#screenshots)
 - [Deployment](#deployment)
 - [How to Use](#how-to-use)
+- [Technology Used] (#Technology-Used)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -31,7 +31,7 @@ Welcome to SuiteStay. Its a one stop WebApplication for quickly performing reser
 1. Site is live at <https://suitestay.netlify.app>
 2. You can also access the site from following QR Code:
 
-![Screenshot1](/assets/images/Recipehub_QR_Code.png)
+![Screenshot1](/src/assets/finished_page/QR_Code.png)
 
 To run the application locally, follow these steps:
 
