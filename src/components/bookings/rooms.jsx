@@ -12,7 +12,7 @@ function HotelRooms() {
         <div className="flex md:align-items-center md:justify-content-between flex-column md:flex-row pb-4 border-bottom-1 surface-border">
           <div className="mb-3 lg:mb-0">
             <div className="text-3xl font-medium text-900 mb-3">
-              Rooms Available
+              Available Rooms 
             </div>
             <div className="text-500 mr-0 md:mr-3">
               Experience luxury redefined at Suitestay – Where Every Stay is a
@@ -66,7 +66,7 @@ function HotelRooms() {
                   </div>
                   <span className="text-900">Capacity: {room.capacity}</span>
                   <div className="text-900 text-xl font-medium mt-3 mb-3">
-                    ${room.pricePerNight}.00
+                    £{room.pricePerNight}.00
                   </div>
                   <div className="text-900 text-xl font-medium mt-3 mb-3">
                   Room Area {room.roomDetails.roomArea}
